@@ -7,7 +7,7 @@ const welcome = ()=>{
   console.log(name.trim())
 }
 
-const questions = [{question:"Who was the first PM of India? (Enter Full name) ", answer:"Jawahar Lal Nehru"},{question:"First Marvel Movie " ,answer:"Iron Man"},{question:"Full Name Of Captian America in the movie " , answer:"Steve Roger"}]
+const questions = [{question:"Who was the first PM of India? (Enter Full name) ", answer:"Jawahar Lal Nehru"},{question:"First Marvel Movie " ,answer:"Iron Man"},{question:"Full Name Of Captian America in the movie " , answer:"Steve Roger"},{question:"Which animal is known as the 'Ship of the Desert'?",answer:"Camel"},{question:"How many letters are there in the English alphabet?",answer:"7"},{question:"Rainbow consist of how many colours?",answer:"7"}]
 const play = ()=>{
   for(const question in questions){
  const userAnswer = readLineSync.question(questions[question].question) 
@@ -26,7 +26,7 @@ const validateAnswer = (userAnswer,validAnswer)=>{
   }else{
     console.log("Wrong")
     console.log("The correct answer is " + validAnswer)
-    console.log("Current Score " + score)
+    console.log("Your Score " + score)
     console.log("-------------")
   }
 }
